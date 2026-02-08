@@ -96,3 +96,75 @@ section {
   from { transform: translateY(50px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+/* Блок преимуществ */
+.advantages {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.adv-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.adv {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+
+.adv:hover {
+  transform: translateY(-5px);
+}
+
+/* Отзывы */
+.reviews {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.review-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.review {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+}
+
+.review p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.review span {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+/* Футер */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
