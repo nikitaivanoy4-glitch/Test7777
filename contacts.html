@@ -5,36 +5,31 @@
   <title>Контакты</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="lux-theme">
-  <header class="animated-header">
+<body>
+  <header>
     <nav>
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="electro.html">Электрика</a></li>
         <li><a href="lowvoltage.html">Слаботочка</a></li>
         <li><a href="calc.html">Калькулятор</a></li>
-        <li><a href="contacts.html" class="active">Контакты</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="section contacts">
-    <h2>Свяжитесь с нами</h2>
-    <p>Телефон: +7 (999) 123‑45‑67</p>
-    <p>Email: info@example.com</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Ваше имя" required>
-      <input type="email" placeholder="Ваш email" required>
-      <textarea placeholder="Сообщение" required></textarea>
-      <button type="submit" class="btn">Отправить</button>
-    </form>
+  <section class="contacts">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Свяжитесь с нами</h1>
+      <p>Телефон: +7 (999) 123-45-67<br>Email: info@example.com</p>
+      <form>
+        <input type="text" placeholder="Ваше имя">
+        <input type="email" placeholder="Ваш email">
+        <textarea placeholder="Сообщение"></textarea>
+        <button class="btn">Отправить</button>
+      </form>
+    </div>
   </section>
 </body>
 </html>
-<section class="contacts">
-  <div class="overlay"></div>
-  <div class="content">
-    <h1>Свяжитесь с нами</h1>
-    <p>Телефон: +7 (999) 123-45-67<br>Email: info@example.com</p>
-  </div>
-</section>
