@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор стоимости</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lux-theme">
+  <header class="animated-header">
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="electro.html">Электрика</a></li>
+        <li><a href="lowvoltage.html">Слаботочка</a></li>
+        <li><a href="calc.html" class="active">Калькулятор</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section calculator">
+    <h2>Калькулятор стоимости</h2>
+    <form onsubmit="calculate(event)">
+      <label>Площадь квартиры (м²):</label>
+      <input type="number" id="area" required>
+      <label>Тип работ:</label>
+      <select id="work">
+        <option value="electro">Электрика</option>
+        <option value="lowvoltage">Слаботочка</option>
+      </select>
+      <button type="submit" class="btn">Рассчитать</button>
+    </form>
+    <p id="result"></p>
+  </section>
+
+  <script>
+    function calculate(e){
+      e.preventDefault();
+      const area = document.getElementById('area').value;
+      const work = document.getElementById('work').value;
+      let pricePerM2 = work === 'electro' ? 1500 : 1000;
+      let total = area * pricePerM2;
+      document.getElementById('result').innerText = "Примерная стоимость: " + total.toLocaleString() + " ₽";
+    }
+  </script>
+</body>
+</html>
