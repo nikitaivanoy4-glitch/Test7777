@@ -1,0 +1,13 @@
+body.lux-theme {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #fdfdfd;
+  color: #222;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  padding: 15px
